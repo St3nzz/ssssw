@@ -807,6 +807,14 @@ h6 {
   .header__burger:hover {
     cursor: pointer;
   }
+  .header__burger p {
+    margin: 0;
+    position: absolute;
+    top: -24px;
+    left: -1px;
+    color: #b9b9b9;
+    font-size: 19px;
+  }
   .header__burger span {
     top: 50%;
     -webkit-transform: translateY(-50%);
