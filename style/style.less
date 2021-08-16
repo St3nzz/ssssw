@@ -585,6 +585,9 @@ hr{
 
     // Products
     .products{
+        &__show{
+            margin-top: 34px;
+        }
         &__items{
             margin-top: 24px;
         }
@@ -1039,18 +1042,17 @@ hr{
     .container{
         &-wide{
             width: 100%;
+            margin-bottom: -1px;
         }
     }
     .container{
         width: 100%;
         max-width: 100%;
     }
-
     .show-btn{
         font-size: 17px;
         justify-content: center;
     }
-
     .section__title{
         h2{
             font-size: 32px;
@@ -1079,6 +1081,11 @@ hr{
         &__cart, &__user{
             margin-top: 20px;
         }
+        &__user{
+            p{
+                font-size: 16px;
+            }
+        }
     }
 
     // Nav
@@ -1101,6 +1108,7 @@ hr{
 
     // News
     .news{
+        margin-bottom: -1px;
         hr{
             display: block;
         }
@@ -1154,4 +1162,60 @@ hr{
             width: 100%;
         }
     }
+
+    // News
+    .news{
+        &__item{
+            &-img{
+                width: 280px;
+                height: 148px;
+                img{
+                    width: 280px;
+                    height: 148px;
+                }
+            }
+        }
+    }
+
+    // Offer
+    .offer{
+        &__item{
+            width: 300px;
+            &-img{
+                img{
+                    width: 300px;
+                    height: 158px;
+                }
+            }
+        }
+    }
+    
+    // Footer
+    .footer{
+        &__list{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            ul{
+                margin-top: 0;
+            }
+        }
+    }
 }
+
+// xm
+@media screen and(max-width: 360px) {
+    // Offer
+    .offer{
+        &__item{
+            width: 290px;
+            &-img{
+                img{
+                    width: 290px;
+                    height: 152px;
+                }
+            }
+        }
+    }
+}
+
