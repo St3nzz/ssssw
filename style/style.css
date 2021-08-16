@@ -73,9 +73,8 @@ h6 {
   -webkit-box-shadow: 0 2px 8px rgba(85, 85, 85, 0.25);
           box-shadow: 0 2px 8px rgba(85, 85, 85, 0.25);
 }
-.top__adress {
-  padding-left: 36px;
-  background: url(../img/top/location.png) center left no-repeat;
+.top__adress p {
+  display: inline-block;
 }
 .top__mail {
   margin-left: 14px;
@@ -941,10 +940,48 @@ h6 {
 }
 @media screen and (max-width: 767px) {
   .shadow {
-    width: 540px;
+    width: 100%;
   }
   .container-wide {
-    width: 540px;
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+  .show-btn {
+    font-size: 17px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .top .col-sm-12 {
+    padding: 0;
+  }
+  .top__adress {
+    text-align: center;
+  }
+  .header {
+    padding-top: 88px;
+  }
+  .header__logo {
+    margin-bottom: 20px;
+  }
+  .header input {
+    margin-left: 0;
+  }
+  .header__cart,
+  .header__user {
+    margin-top: 20px;
+  }
+  .nav__items {
+    height: 100%;
+  }
+  .nav .col-6 {
+    padding: 0;
+  }
+  .banner {
+    display: none;
   }
 }
 @media screen and (max-width: 575px) {
