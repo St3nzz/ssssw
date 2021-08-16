@@ -7,14 +7,17 @@ input.onblur = () => {
 }
 
 phone_none = document.getElementsByClassName('phone__none');
+burger = document.querySelector('.header__burger');
 
 // Static
 
 if (document.documentElement.clientWidth <= 974){
+    burger.style.display = "block";
     for(i = 0; i < phone_none.length; i++){
         phone_none[i].style.display = "none";
     }
 } else {
+    burger.style.display = "none";
     for(i = 0; i < phone_none.length; i++){
         phone_none[i].style.display = "block";
     }
@@ -24,10 +27,12 @@ if (document.documentElement.clientWidth <= 974){
 
 window.addEventListener('resize',function(){      
     if (document.documentElement.clientWidth <= 974){
+        burger.style.display = "block";
         for(i = 0; i < phone_none.length; i++){
             phone_none[i].style.display = "none";
         }
     } else {
+        burger.style.display = "none";
         for(i = 0; i < phone_none.length; i++){
             phone_none[i].style.display = "block";
         }

@@ -2,6 +2,7 @@ body {
   font-size: 18px;
   font-family: sans-serif;
   background: url(../img/bg.jpg);
+  color: #333;
 }
 ul {
   padding: 0;
@@ -303,9 +304,10 @@ h6 {
   margin-top: 30px;
 }
 .products__item {
+  width: 196px;
+  height: 364px;
   padding: 0 8px;
   font-size: 18px;
-  height: 364px;
   padding-top: 10px;
   background-color: #eeeeee;
   text-align: center;
@@ -413,8 +415,11 @@ h6 {
 .news__item-title {
   line-height: 32px;
   font-size: 24px;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
   font-weight: 500;
+}
+.news__item-discription {
+  color: #444;
 }
 .offer .container-wide {
   padding-top: 0;
@@ -583,6 +588,7 @@ h6 {
   .products__item {
     font-size: 16px;
     height: 332px;
+    width: 166px;
   }
   .products__item span {
     font-size: 18px;
@@ -714,7 +720,9 @@ h6 {
   }
   .products__item {
     font-size: 15px;
-    height: 272px;
+    height: 282px;
+    width: 146px;
+    margin-left: -5px;
   }
   .products__item span {
     font-size: 16px;
@@ -791,23 +799,38 @@ h6 {
   .container-wide {
     width: 720px;
   }
+  .section__title {
+    text-align: center;
+  }
+  .section__title h2 {
+    font-size: 36px;
+  }
+  .show-btn {
+    font-size: 18px;
+  }
   .top__mail {
     display: none;
   }
   .header__logo {
     text-align: center;
   }
+  .header input {
+    margin-left: 12px;
+  }
   .header__burger {
+    display: none;
+  }
+  .header__burger-menu {
     background-color: #eeeeee;
     height: 39px;
     padding-left: 10px;
     width: 34px;
     position: relative;
   }
-  .header__burger:hover {
+  .header__burger-menu:hover {
     cursor: pointer;
   }
-  .header__burger p {
+  .header__burger-menu p {
     margin: 0;
     position: absolute;
     top: -24px;
@@ -815,7 +838,7 @@ h6 {
     color: #b9b9b9;
     font-size: 19px;
   }
-  .header__burger span {
+  .header__burger-menu span {
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -824,7 +847,7 @@ h6 {
     height: 3px;
     background-color: #333;
   }
-  .header__burger span:before {
+  .header__burger-menu span:before {
     content: "";
     position: absolute;
     width: 34px;
@@ -832,13 +855,85 @@ h6 {
     top: -10px;
     background-color: #333;
   }
-  .header__burger span:after {
+  .header__burger-menu span:after {
     content: "";
     position: absolute;
     width: 34px;
     height: 3px;
     top: 10px;
     background-color: #333;
+  }
+  .products__items {
+    margin-top: -24px;
+  }
+  .products__item {
+    margin: 0 auto;
+    margin-top: 48px;
+    font-size: 16px;
+    height: 332px;
+    width: 196px;
+  }
+  .products__item span {
+    font-size: 18px;
+  }
+  .products__item-img img {
+    max-width: 132px;
+    max-height: 132px;
+  }
+  .products__item-availability {
+    bottom: 54px;
+  }
+  .products__item-price {
+    bottom: 26px;
+  }
+  .products__item-button {
+    width: 124px;
+    height: 32px;
+    bottom: -16px;
+    padding: 0;
+    font-size: 16px;
+  }
+  .news__item {
+    margin-bottom: 24px;
+  }
+  .news__item-img {
+    width: 330px;
+    height: 174px;
+  }
+  .news__item-img img {
+    width: 330px;
+    height: 174px;
+  }
+  .news__item-title {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+  .news__item-discription {
+    font-size: 18px;
+  }
+  .news__item-date {
+    bottom: -28px;
+    line-height: 28px;
+    font-size: 18px;
+    width: 100px;
+  }
+  .offer__show {
+    margin-top: 0;
+  }
+  .offer__item {
+    margin-bottom: 24px;
+  }
+  .offer__item img {
+    width: 100%;
+    height: 236px;
+  }
+  .offer__item-title {
+    font-size: 24px;
+    line-height: 48px;
+  }
+  .offer__item:hover .offer__item-title {
+    font-size: 32px;
+    line-height: 236px;
   }
   .footer__services {
     margin-bottom: 18px;
