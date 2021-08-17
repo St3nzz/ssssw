@@ -166,6 +166,7 @@ hr {
   color: #fff;
 }
 .header__cart {
+  margin-right: 18px;
   position: relative;
 }
 .header__cart-value {
@@ -188,7 +189,9 @@ hr {
           justify-content: center;
 }
 .header__user {
+  text-align: center;
   height: 68px;
+  width: 68px;
 }
 .header__user img {
   width: 50px;
@@ -318,7 +321,7 @@ hr {
   padding-top: 10px;
   background-color: #eeeeee;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 3px;
   position: relative;
 }
 .products__item-img img {
@@ -339,6 +342,7 @@ hr {
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   width: 100%;
+  color: gray;
 }
 .products__item-price {
   position: absolute;
@@ -970,6 +974,15 @@ hr {
   .section__title h2 {
     font-size: 32px;
   }
+  .top {
+    height: 40px;
+  }
+  .top p {
+    line-height: 40px;
+  }
+  .top img {
+    width: 26px;
+  }
   .top .col-sm-12 {
     padding: 0;
   }
@@ -977,7 +990,7 @@ hr {
     text-align: center;
   }
   .header {
-    padding-top: 88px;
+    padding-top: 80px;
   }
   .header__logo {
     margin-bottom: 20px;
@@ -1039,6 +1052,7 @@ hr {
   .offer__item-title {
     max-width: 380px;
     font-size: 20px;
+    line-height: 40px;
   }
   .offer__item:hover .offer__item-title {
     line-height: 200px;
@@ -1051,6 +1065,18 @@ hr {
   }
   .container-wide {
     width: 100%;
+  }
+  .top {
+    height: 36px;
+  }
+  .top p {
+    line-height: 36px;
+  }
+  .top img {
+    width: 24px;
+  }
+  .header {
+    padding-top: 72px;
   }
   .news__item-img {
     width: 280px;
@@ -1067,6 +1093,18 @@ hr {
     width: 300px;
     height: 158px;
   }
+  .offer__item-title {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .offer__item:hover .offer__item-title {
+    line-height: 158px;
+    font-size: 20px;
+  }
+  .footer__nav a {
+    padding: 0 10px;
+    font-size: 17px;
+  }
   .footer__list {
     margin-top: 10px;
     display: -webkit-box;
@@ -1080,6 +1118,9 @@ hr {
   .footer__list ul {
     margin-top: 0;
   }
+  .footer__copyright {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 360px) {
   .offer__item {
@@ -1088,5 +1129,12 @@ hr {
   .offer__item-img img {
     width: 290px;
     height: 152px;
+  }
+  .footer__nav a {
+    padding: 0 8px;
+    font-size: 16px;
+  }
+  .footer__copyright {
+    font-size: 14px;
   }
 }

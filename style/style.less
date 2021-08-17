@@ -145,6 +145,7 @@ hr{
         }
     }
     &__cart{
+        margin-right: 18px;
         position: relative;
         &-value{
             font-size: 16px;
@@ -161,7 +162,9 @@ hr{
         }
     }
     &__user{
+        text-align: center;
         height: 68px;
+        width: 68px;
         img{
             width: 50px;
         }
@@ -295,7 +298,7 @@ hr{
         padding-top: 10px;
         background-color: @gray;
         text-align: center;
-        border-radius: 20px;
+        border-radius: 3px;
         position: relative;
         &-img{
             img{
@@ -316,6 +319,7 @@ hr{
             left: 50%;
             transform: translate(-50%);
             width: 100%;
+            color: gray;
         }
         &-price{
             position: absolute;
@@ -1061,6 +1065,13 @@ hr{
 
     // Top
     .top{
+        height: 40px;
+        p{
+            line-height: 40px;
+        }
+        img{
+            width: 26px;
+        }
         .col-sm-12{
             padding: 0;
         }
@@ -1071,7 +1082,7 @@ hr{
 
     // Header
     .header{
-        padding-top: 88px;
+        padding-top: 80px;
         &__logo{
             margin-bottom: 20px;
         }
@@ -1141,6 +1152,7 @@ hr{
             &-title{
                 max-width: 380px;
                 font-size: 20px;
+                line-height: 40px;
             }
             &:hover{
                 .offer__item-title{
@@ -1161,6 +1173,22 @@ hr{
         &-wide{
             width: 100%;
         }
+    }
+
+    // Top
+    .top{
+        height: 36px;
+        p{
+            line-height: 36px;
+        }
+        img{
+            width: 24px;
+        }
+    }
+
+    // Header
+    .header{
+        padding-top: 72px;
     }
 
     // News
@@ -1187,11 +1215,27 @@ hr{
                     height: 158px;
                 }
             }
+            &-title{
+                font-size: 18px;
+                line-height: 32px;
+            }
+            &:hover{
+                .offer__item-title{
+                    line-height: 158px;
+                    font-size: 20px;
+                }
+            }
         }
     }
     
     // Footer
     .footer{
+        &__nav{
+            a{
+                padding: 0 10px;
+                font-size: 17px;
+            }
+        }
         &__list{
             margin-top: 10px;
             display: flex;
@@ -1199,6 +1243,9 @@ hr{
             ul{
                 margin-top: 0;
             }
+        }
+        &__copyright{
+            font-size: 16px;
         }
     }
 }
@@ -1215,6 +1262,19 @@ hr{
                     height: 152px;
                 }
             }
+        }
+    }
+
+    // Footer
+    .footer{
+        &__nav{
+            a{
+                padding: 0 8px;
+                font-size: 16px;
+            }
+        }
+        &__copyright{
+            font-size: 14px;
         }
     }
 }
