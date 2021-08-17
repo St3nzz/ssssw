@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="style/bootstrap.css">
+    <!-- News css -->
+    <link rel="stylesheet" href="style/news.css">
     <!-- Main css -->
     <link rel="stylesheet" href="style/style.css">
     <title>Stroyland</title>
@@ -20,17 +22,18 @@
     <section class="top">
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-sm-12 col-md-6 col-lg-5">
                     <div class="top__item top__adress">
+                        <img src="img/top/location.png" alt="">
                         <p>г. Димитровград, ул. Свирская 50</p>
                     </div>
                 </div>
-                <div class="col-md-2 offset-md-3">
+                <div id="top__mail" class="phone__none col-lg-2 offset-lg-2">
                     <div class="top__item top__mail">
                         <p>stroyland@mail.ru</p>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-sm-12 col-md-6 col-lg-3">
                     <a href="tel:+78423552323">
                         <div class="top__item top__phone">
                             <img src="img/top/phone.png" alt="">
@@ -46,13 +49,35 @@
         <div class="container-wide">
             <div class="container">
                 <div class="header__top row align-items-center">
-                    <div class="col-md-3">
+                    <div class="col-md-12 col-lg-4 col-xl-3">
                         <div class="header__logo">
                             <a href="#"><img src="img/header/logo.png" alt="logo"></a>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <input type="text" class="header__input">
+                    <div class="header__burger col-1">
+                        <div class="header__burger-menu">
+                            <span></span>
+                            <p>меню</p>
+                        </div>
+                    </div>
+                    <div class="col-10 offset-1 col-md-8 offset-md-0 col-lg-5 col-xl-7">
+                        <input id="header__input" type="text" class="header__input" placeholder="Найти раковину в ванную">
+                    </div>
+                    <div class="col-6 offset-3 col-md-3 offset-md-0 col-xl-2 d-flex justify-content-around">
+                        <a href="#">
+                            <div class="header__cart">
+                                <img src="img/header/cart.png" alt="">
+                                <div class="header__cart-value">
+                                    8
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="header__user">
+                                <img src="img/header/user.png" alt="">
+                                <p>Войти</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -63,23 +88,43 @@
             <div class="nav__items">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-2">
-                            <div class="nav__item-red"><a href="#">все категории</a></div>
+                        <div class="phone__none col-md-2">
+                            <div class="nav__item-red"><a href=""><span></span>категории</a></div>
                         </div>
-                        <div class="col-md-2">
-                            <div class="nav__item"><a href="index.html">Главная</a></div>
+                        <div class="col-6 col-md-3 col-lg-2">
+                            <a href="index.html">
+                                <div class="nav__item">
+                                    главная
+                                </div>
+                            </a>
                         </div>
-                        <div class="col-md-2">
-                            <div class="nav__item"><a href="#">услуги</a></div>
+                        <div class="phone__none col-md-2">
+                            <a href="#">
+                                <div class="nav__item">
+                                    услуги
+                                </div>
+                            </a>
                         </div>
-                        <div class="col-md-2">
-                            <div class="nav__item"><a href="#">оплата</a></div>
+                        <div class="col-6 col-md-3 col-lg-2">
+                            <a href="#">
+                                <div class="nav__item">
+                                    оплата
+                                </div>
+                            </a>
                         </div>
-                        <div class="col-md-2">
-                            <div class="nav__item"><a href="#">контакты</a></div>
+                        <div class="col-6 col-md-3 col-lg-2">
+                            <a href="#">
+                                <div class="nav__item">
+                                    контакты
+                                </div>
+                            </a>
                         </div>
-                        <div class="col-md-2">
-                            <div class="nav__item"><a href="#">новости</a></div>
+                        <div class="col-6 col-md-3 col-lg-2">
+                            <a href="news.html">
+                                <div class="nav__item">
+                                    новости
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -90,7 +135,7 @@
         <div class="container-wide">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="phone__none col-md-3">
                         <div class="main__list">
                             <div class="main__list-item"><a href=""><img src="img/main/plug.png" alt="">Электротовары</a></div>
                             <div class="main__list-item"><a href=""><img src="img/main/settings.png" alt="">Инструменты</a></div>
@@ -100,6 +145,78 @@
                             <div class="main__list-item"><a href=""><img src="img/main/opened-door-aperture.png" alt="">Двери</a></div>
                             <div class="main__list-item"><a href=""><img src="img/main/gear.png" alt="">Крепежи</a></div>
                             <div class="main__list-item"><a href=""><img src="img/main/magazine.png" alt="">Посмотреть все</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-9">
+                        <div class="news">
+                            <div class="news__wrapper">
+                                <div class="container">
+                                <div class="section__title">
+                                    <h2>Новости магазина</h2>
+                                </div>
+                                <div class="news__items">
+                                    <div class="row">
+                                            <div class="news__item">
+                                                <div class="news__item-img">
+                                                    <img src="img/news/news_1.jpg" alt="">
+                                                    <div class="news__item-date">
+                                                        11/07/2021
+                                                    </div>
+                                                </div>
+                                                <div class="news__item-content">
+                                                    <div class="news__item-title">
+                                                        У нас пополнение на складе
+                                                    </div>
+                                                    <div class="news__item-discription">
+                                                        Привезли новые бруски, размеры варьируются между 2м и 10м, цвет блежно-жёлтый
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <hr>
+                                            <div class="news__item">
+                                                <div class="news__item-img">
+                                                    <img src="img/news/news_2.jpg" alt="">
+                                                    <div class="news__item-date">
+                                                        14/07/2021
+                                                    </div>
+                                                </div>
+                                                <div class="news__item-content">
+                                                    <div class="news__item-title">
+                                                        Мы празднуем юбилей
+                                                    </div>
+                                                    <div class="news__item-discription">
+                                                        с 14 по 18 августа скидки 10% на все стройматериалы
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <hr>
+                                            <div class="news__item">
+                                                <div class="news__item-img">
+                                                    <img src="img/news/news_3.jpg" alt="">
+                                                    <div class="news__item-date">
+                                                        10/07/2021
+                                                    </div>
+                                                </div>
+                                                <div class="news__item-content">
+                                                    <div class="news__item-title">
+                                                        Что за праздник?
+                                                    </div>
+                                                    <div class="news__item-discription">
+                                                        сегодня день сантехника, а это значит, что на все 
+                                                        товары из раздела “Сантехника” скидка 10%
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="news__show show-btn">
+                                    <a href="#">
+                                        <p>загрузить ещё</p>
+                                        <img src="img/mid__arrow.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -119,7 +236,7 @@
             <div class="container">
                 <div class="footer__content">
                     <div class="row">
-                        <div class="col-lg-7 offset-lg-0 col-xl-6 offset-xl-1 col-xxl-5">
+                        <div class="col-md-10 offset-md-1 col-lg-7 offset-lg-0 col-xl-6 offset-xl-1 col-xxl-5">
                             <div class="footer__services">
                                 <h6>Услуги</h6>
                                 <div class="footer__list">
@@ -140,7 +257,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-5 offset-xxl-1">
+                        <div class="col-md-12 col-lg-5 offset-xxl-1">
                             <div class="footer__map">
                                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af4b27fb47a7d014f004fc6f86d75692e7b5c47193904679fee10e5f57a26c747&amp;source=constructor" width="520" height="240" frameborder="0"></iframe>
                             </div>    
@@ -154,6 +271,9 @@
         </div>
 </footer>
 </div>
+<!-- Main js -->
+<script src="scripts/main.js"></script>
+<!-- Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>

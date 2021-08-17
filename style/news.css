@@ -1,0 +1,15 @@
+.news {
+  padding-bottom: 0 !important;
+}
+.news__wrapper {
+  box-shadow: none !important;
+}
+.news__item {
+  margin-top: 54px !important;
+}
+.news__item:first-child {
+  margin-top: 24px !important;
+}
+.footer .container-wide {
+  padding-top: 0;
+}
